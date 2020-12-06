@@ -5,8 +5,10 @@
 //  Created by Altynbek Usenbekov on 6/12/20.
 //
 
-import Foundation
+import SwiftUI
 
 class MenuRouter {
-  
+  func makeCartView() -> some View {
+    return CartView()
+  }
 }

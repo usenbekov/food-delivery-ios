@@ -60,7 +60,7 @@ struct MenuItemCell: View {
     .cornerRadius(16)
     .shadow(color: Color.black.opacity(0.07), radius: 4, x: 0, y: 0)
     .padding(.vertical, 8)
-    .padding(.horizontal, 40)
+    .padding(.horizontal, 24)
     .clipped()
     .onAppear() {
       self.cancellable = self.imageProvider

@@ -27,4 +27,8 @@ class MenuPresenter: ObservableObject {
   var imageProvider: ImageDataProvider {
     return self.interactor.imageProvider
   }
+  
+  func cartViewBuilder() -> some View {
+    return router.makeCartView()
+  }
 }
