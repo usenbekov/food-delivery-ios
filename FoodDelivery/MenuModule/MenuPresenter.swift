@@ -23,4 +23,8 @@ class MenuPresenter: ObservableObject {
       .assign(to: \.items, on: self)
       .store(in: &cancellables)
   }
+  
+  var imageProvider: ImageDataProvider {
+    return self.interactor.imageProvider
+  }
 }

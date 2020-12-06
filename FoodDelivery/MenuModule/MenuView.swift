@@ -11,9 +11,9 @@ struct MenuView: View {
   @ObservedObject var presenter: MenuPresenter
 
   var body: some View {
-    List {
+    ScrollView {
       ForEach (presenter.items, id: \.id) { item in
-        Text(item.name ?? "")
+        MenuItemCell(item: item, imageProvider: presenter.imageProvider)
       }
     }
   }

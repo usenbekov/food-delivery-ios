@@ -45,8 +45,14 @@ extension MockAPI: TargetType {
     switch self {
     case .getMenuItems:
       let jsonStr = [
-        MenuItem(JSON: ["id": "1", "name": "Pepperoni", "price": 55, "detail": "Mozarella, Peperoni, Tomatoes, BBQ sauce"])!,
-        MenuItem(JSON: ["id": "2", "name": "Deluxe", "price": 46, "detail": "Chicken, Peperoni, Tomatoes, Tomato sauce, spicy chorize"])!
+        MenuItem(JSON: ["id": "1", "name": "Pepperoni", "price": 55.0, "detail": "Mozarella, Peperoni, Tomatoes, BBQ sauce"])!,
+        MenuItem(JSON: ["id": "2", "name": "Deluxe", "price": 46.0, "detail": "Chicken, Peperoni, Tomatoes, Tomato sauce, spicy chorize"])!,
+        MenuItem(JSON: ["id": "3", "name": "California", "price": 55.0, "detail": "Mozarella, Peperoni, Tomatoes, BBQ sauce"])!,
+        MenuItem(JSON: ["id": "4", "name": "New York", "price": 46.0, "detail": "Chicken, Peperoni, Tomatoes, Tomato sauce, spicy chorize"])!,
+        MenuItem(JSON: ["id": "5", "name": "Pepperoni", "price": 55.0, "detail": "Mozarella, Peperoni, Tomatoes, BBQ sauce"])!,
+        MenuItem(JSON: ["id": "6", "name": "Deluxe", "price": 46.0, "detail": "Chicken, Peperoni, Tomatoes, Tomato sauce, spicy chorize"])!,
+        MenuItem(JSON: ["id": "7", "name": "California", "price": 55.0, "detail": "Mozarella, Peperoni, Tomatoes, BBQ sauce"])!,
+        MenuItem(JSON: ["id": "8", "name": "New York", "price": 46.0, "detail": "Chicken, Peperoni, Tomatoes, Tomato sauce, spicy chorize"])!
       ].toJSONString()
       return jsonStr!.utf8Encoded
     }
