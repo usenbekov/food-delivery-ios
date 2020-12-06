@@ -15,6 +15,13 @@
 		3F6A7509257CBE9B00C7DACA /* FoodDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7508257CBE9B00C7DACA /* FoodDeliveryTests.swift */; };
 		3F6A7514257CBE9C00C7DACA /* FoodDeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7513257CBE9C00C7DACA /* FoodDeliveryUITests.swift */; };
 		3F6A752E257CC11F00C7DACA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A752D257CC11F00C7DACA /* README.md */; };
+		3F6A7536257CCBA300C7DACA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7535257CCBA300C7DACA /* MenuItem.swift */; };
+		3F6A753E257CCD6C00C7DACA /* MenuDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A753D257CCD6C00C7DACA /* MenuDataProvider.swift */; };
+		3F6A754B257CD55400C7DACA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A754A257CD55400C7DACA /* MenuView.swift */; };
+		3F6A7550257CD57800C7DACA /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A754F257CD57800C7DACA /* MenuInteractor.swift */; };
+		3F6A7555257CDB0E00C7DACA /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7554257CDB0E00C7DACA /* MenuPresenter.swift */; };
+		3F6A755A257CDBD800C7DACA /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7559257CDBD800C7DACA /* MenuRouter.swift */; };
+		3F6A7567257CE62300C7DACA /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7566257CE62300C7DACA /* MockAPI.swift */; };
 		46A5D9875B0B37260CF37C03 /* Pods_FoodDelivery_FoodDeliveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E9EB017C3D8DD760AC7D80 /* Pods_FoodDelivery_FoodDeliveryUITests.framework */; };
 		A5A6D309CFBFC8A924A5784F /* Pods_FoodDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A096C75E001540B14D9F556 /* Pods_FoodDelivery.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +57,13 @@
 		3F6A7513257CBE9C00C7DACA /* FoodDeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUITests.swift; sourceTree = "<group>"; };
 		3F6A7515257CBE9C00C7DACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6A752D257CC11F00C7DACA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F6A7535257CCBA300C7DACA /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		3F6A753D257CCD6C00C7DACA /* MenuDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataProvider.swift; sourceTree = "<group>"; };
+		3F6A754A257CD55400C7DACA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		3F6A754F257CD57800C7DACA /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		3F6A7554257CDB0E00C7DACA /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		3F6A7559257CDBD800C7DACA /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		3F6A7566257CE62300C7DACA /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		4A096C75E001540B14D9F556 /* Pods_FoodDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		528D72E19EE112E4E704F7D9 /* Pods-FoodDeliveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryTests.release.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryTests/Pods-FoodDeliveryTests.release.xcconfig"; sourceTree = "<group>"; };
 		52A99E7C2772193FB4D401E1 /* Pods-FoodDelivery-FoodDeliveryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery-FoodDeliveryUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodDelivery-FoodDeliveryUITests/Pods-FoodDelivery-FoodDeliveryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +129,9 @@
 		3F6A74F5257CBE9800C7DACA /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				3F6A7532257CC5BF00C7DACA /* MenuModule */,
+				3F6A7533257CC5FF00C7DACA /* Entities */,
+				3F6A7534257CC60C00C7DACA /* DataSources */,
 				3F6A74F6257CBE9800C7DACA /* FoodDeliveryApp.swift */,
 				3F6A74F8257CBE9800C7DACA /* ContentView.swift */,
 				3F6A74FA257CBE9B00C7DACA /* Assets.xcassets */,
@@ -148,6 +165,34 @@
 				3F6A7515257CBE9C00C7DACA /* Info.plist */,
 			);
 			path = FoodDeliveryUITests;
+			sourceTree = "<group>";
+		};
+		3F6A7532257CC5BF00C7DACA /* MenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				3F6A754A257CD55400C7DACA /* MenuView.swift */,
+				3F6A754F257CD57800C7DACA /* MenuInteractor.swift */,
+				3F6A7554257CDB0E00C7DACA /* MenuPresenter.swift */,
+				3F6A7559257CDBD800C7DACA /* MenuRouter.swift */,
+			);
+			path = MenuModule;
+			sourceTree = "<group>";
+		};
+		3F6A7533257CC5FF00C7DACA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3F6A7535257CCBA300C7DACA /* MenuItem.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3F6A7534257CC60C00C7DACA /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				3F6A753D257CCD6C00C7DACA /* MenuDataProvider.swift */,
+				3F6A7566257CE62300C7DACA /* MockAPI.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 		513867C90A0160DBEF518BAB /* Frameworks */ = {
@@ -411,8 +456,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6A754B257CD55400C7DACA /* MenuView.swift in Sources */,
+				3F6A755A257CDBD800C7DACA /* MenuRouter.swift in Sources */,
+				3F6A7536257CCBA300C7DACA /* MenuItem.swift in Sources */,
 				3F6A74F9257CBE9800C7DACA /* ContentView.swift in Sources */,
+				3F6A7567257CE62300C7DACA /* MockAPI.swift in Sources */,
+				3F6A7550257CD57800C7DACA /* MenuInteractor.swift in Sources */,
 				3F6A74F7257CBE9800C7DACA /* FoodDeliveryApp.swift in Sources */,
+				3F6A753E257CCD6C00C7DACA /* MenuDataProvider.swift in Sources */,
+				3F6A7555257CDB0E00C7DACA /* MenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

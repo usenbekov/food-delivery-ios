@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct FoodDeliveryApp: App {
+  
+//  let menuDataProvider = SampleMenuDataProvider(immediatelyStub: true) // Local data
+  let menuDataProvider = SampleMenuDataProvider()
+  
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      ContentView(menuProvider: menuDataProvider)
     }
   }
 }

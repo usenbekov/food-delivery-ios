@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+  let menuProvider: MenuDataProvider
+  
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+    NavigationView {
+      MenuView(presenter:
+      MenuPresenter(interactor:
+        MenuInteractor(dataProvider: menuProvider)))
+    }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ContentView(menuProvider: SampleMenuDataProvider())
   }
 }
