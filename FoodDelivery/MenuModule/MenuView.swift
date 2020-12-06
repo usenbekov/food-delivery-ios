@@ -15,6 +15,8 @@ struct MenuView: View {
     VStack {
       ZStack(alignment: .bottomTrailing) {
         ScrollView {
+          ListHeaderView()
+          
           ForEach (presenter.items, id: \.id) { item in
             MenuItemCell(item: item, imageProvider: presenter.imageProvider)
           }

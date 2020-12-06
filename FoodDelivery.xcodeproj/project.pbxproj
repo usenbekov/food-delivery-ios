@@ -25,6 +25,7 @@
 		3F6A7572257D1ED300C7DACA /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7571257D1ED300C7DACA /* ImageDataProvider.swift */; };
 		3F6A757A257D1FC900C7DACA /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7579257D1FC900C7DACA /* MenuItemCell.swift */; };
 		3F6A7583257D619B00C7DACA /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7582257D619B00C7DACA /* CartView.swift */; };
+		3F6A759D257D774D00C7DACA /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A759C257D774D00C7DACA /* ListHeaderView.swift */; };
 		46A5D9875B0B37260CF37C03 /* Pods_FoodDelivery_FoodDeliveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E9EB017C3D8DD760AC7D80 /* Pods_FoodDelivery_FoodDeliveryUITests.framework */; };
 		A5A6D309CFBFC8A924A5784F /* Pods_FoodDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A096C75E001540B14D9F556 /* Pods_FoodDelivery.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		3F6A7571257D1ED300C7DACA /* ImageDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
 		3F6A7579257D1FC900C7DACA /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		3F6A7582257D619B00C7DACA /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		3F6A759C257D774D00C7DACA /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		4A096C75E001540B14D9F556 /* Pods_FoodDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		528D72E19EE112E4E704F7D9 /* Pods-FoodDeliveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryTests.release.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryTests/Pods-FoodDeliveryTests.release.xcconfig"; sourceTree = "<group>"; };
 		52A99E7C2772193FB4D401E1 /* Pods-FoodDelivery-FoodDeliveryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery-FoodDeliveryUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodDelivery-FoodDeliveryUITests/Pods-FoodDelivery-FoodDeliveryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				3F6A7579257D1FC900C7DACA /* MenuItemCell.swift */,
+				3F6A759C257D774D00C7DACA /* ListHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				3F6A7567257CE62300C7DACA /* MockAPI.swift in Sources */,
 				3F6A7550257CD57800C7DACA /* MenuInteractor.swift in Sources */,
 				3F6A74F7257CBE9800C7DACA /* FoodDeliveryApp.swift in Sources */,
+				3F6A759D257D774D00C7DACA /* ListHeaderView.swift in Sources */,
 				3F6A753E257CCD6C00C7DACA /* MenuDataProvider.swift in Sources */,
 				3F6A7555257CDB0E00C7DACA /* MenuPresenter.swift in Sources */,
 			);

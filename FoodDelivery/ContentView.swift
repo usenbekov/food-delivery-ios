@@ -19,6 +19,8 @@ struct ContentView: View {
           dataProvider: menuProvider,
           imageProvider: imageProvider
         )))
+        .navigationBarHidden(true)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
   }
 }
